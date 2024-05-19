@@ -14,7 +14,7 @@ app.use(cors({
 })) 
 
 app.use("/",router)
-
+app.use("/",(req,res)=>{res.send("sample route")})
 app.use("/",bookRouter)
 app.use("/",myorders)
 app.use("/",mycart)
